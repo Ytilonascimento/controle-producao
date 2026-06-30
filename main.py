@@ -67,14 +67,15 @@ def gerar_grafico():
             datas.append(linha['Data'])
             taxas.append(float(linha['Taxa de Defeito (%)']))
 
-    plt.figure(figsize=(10,5))
-    plt.plot(datas, taxas, marker='o', linestyle='-', color='blue')
-    plt.title('Taxa de Defeito ao longo do tempo')
-    plt.xlabel('Data')
-    plt.ylabel('Taxa de Defeito (%)')
+    plt.figure(figsize=(10,6))
+    plt.plot(datas, taxas, marker='o', linestyle='-', color='blue', linewidth=2, markersize=8)
+    plt.title('📊 Taxa de Defeito ao longo do tempo', fontsize=16, fontweight='bold')
+    plt.xlabel('Data', fontsize=12)
+    plt.ylabel('Taxa de Defeito (%)', fontsize=12)
+    plt.grid(True, linestyle='--', alpha=0.6)
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plt.savefig('grafico_producao.png')  # salva o gráfico como imagem
+    plt.savefig('grafico_producao.png')
     plt.show()
 
 # Função principal
