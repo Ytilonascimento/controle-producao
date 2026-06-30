@@ -1,11 +1,11 @@
-# 📊 Sistema de Controle de Produção em Python
+#  Sistema de Controle de Produção em Python
 
 Este projeto é um sistema simples de **controle de produção** desenvolvido em Python.  
 Ele permite registrar a quantidade de peças produzidas, calcular a taxa de defeito, classificar o desempenho e gerar relatórios em **CSV** e **gráficos**.
 
 ---
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 - Entrada de dados do operador e produção.
 - Validação de informações (quantidade produzida e defeituosa).
 - Cálculo de peças boas, taxa de defeito e desempenho.
@@ -16,4 +16,35 @@ Ele permite registrar a quantidade de peças produzidas, calcular a taxa de defe
 
 ---
 
-## 📂 Estrutura do Projeto
+##  Estrutura do Projeto
+
+controle-producao/
+│
+├── main.py                # Código principal
+├── relatorio_producao.csv # Histórico de produção
+├── grafico_producao.png   # Gráfico gerado
+├── index.html             # Página para GitHub Pages
+└── README.md              # Documentação do projeto
+
+
+
+---
+
+##  Instalação e Uso
+
+### 1. Clone o repositório
+```bash
+git clone  https://github.com/Ytilonascimento/controle-producao.git
+cd controle-producao
+
+python -m venv venv
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+
+pip install -r requirements.txt
+
+matplotlib
+
+
+python main.py
+
