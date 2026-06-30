@@ -48,3 +48,20 @@ matplotlib
 
 python main.py
 
+##  Demonstração Online
+O gráfico gerado pelo sistema pode ser visualizado em:
+[Acesse aqui]
+
+(https://ytilonascimento.github.io/controle-producao/)
+
+##  Como testar localmente
+1. Baixe o repositório.
+2. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
+
+
+python main.py
+
+
+
